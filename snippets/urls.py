@@ -4,8 +4,8 @@ from snippets import views
 
 
 urlpatterns = [
-    path('snippets/', views.SnippetList.as_view()),
-    path('snippets/<int:pk>/', views.SnippetDetail.as_view()),
+    path('snippets/', views.SnippetListGen.as_view()),
+    path('snippets/<int:pk>/', views.SnippetDetailGen.as_view()),
 ]
 
 # We don't necessarily need to add these extra url patterns in, 
